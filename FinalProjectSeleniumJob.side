@@ -1,0 +1,90 @@
+{
+  "id": "74f10acd-54dc-4257-8866-ce5bd88c68e0",
+  "version": "2.0",
+  "name": "FinalProjectSeleniumJob",
+  "url": "http://localhost:8080",
+  "tests": [{
+    "id": "140ba857-6781-49bc-8110-ccd63afaf6f6",
+    "name": "final_proj_auto_test",
+    "commands": [{
+      "id": "c051884d-bf7d-441d-aa0a-dfac365ecb0d",
+      "comment": "",
+      "command": "open",
+      "target": "/DevOps_FinalProj_EyalDanielYuvalAviv/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7395a032-93dc-4163-9025-1b923c45a5cc",
+      "comment": "",
+      "command": "click",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "982a14d0-a4ff-404b-a4ef-4adecba96eb0",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_name",
+      "targets": [
+        ["name=user_name", "name"],
+        ["css=input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='user_name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "2ad851a4-3e90-41fc-9fcb-c5fe3e95915f",
+      "comment": "",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "admin"
+    }, {
+      "id": "a4c14bc7-7c63-47e0-b21f-db86dd4858be",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }, {
+      "id": "4598bab4-5f68-41a4-bfbf-d99921ea7694",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [],
+      "value": "Main Page"
+    }, {
+      "id": "747bf91e-070f-4f1c-808f-554501fad45c",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p:nth-child(3)",
+      "targets": [],
+      "value": "success"
+    }]
+  }],
+  "suites": [{
+    "id": "aafd5d1d-7a0a-490f-90cf-3234060e1dda",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["140ba857-6781-49bc-8110-ccd63afaf6f6"]
+  }],
+  "urls": ["http://localhost:8080/"],
+  "plugins": []
+}
