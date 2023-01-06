@@ -13,7 +13,7 @@
             <%= request.getParameter("password")%>
          </p></li>
          <% if (request.getParameter("password").equals("admin") && request.getParameter("user_name").equals("admin")) { %>
-         <p> kaki </p>
+         <p> success </p>
          <% } else { %>
          <p> Gosh! Today is a Work-day.. </p>
          <% } %>
