@@ -1,17 +1,22 @@
 <html>
    <head>
-      <title>Using GET Method to Read Form Data</title>
+      <title>Main Page</title>
    </head>
    
    <body>
-      <h1>Using GET Method to Read Form Data</h1>
+      <h1>Main Page</h1>
       <ul>
-         <li><p><b>First Name:</b>
-            <%= request.getParameter("first_name")%>
+         <li><p><b>User Name:</b>
+            <%= request.getParameter("user_name")%>
          </p></li>
-         <li><p><b>Last  Name:</b>
-            <%= request.getParameter("last_name")%>
+         <li><p><b>Password:</b>
+            <%= request.getParameter("password")%>
          </p></li>
+         <% if (request.getParameter("password").equals("admin") && request.getParameter("user_name").equals("admin")) { %>
+         <p> success </p>
+         <% } else { %>
+         <p> Gosh! Today is a Work-day.. </p>
+         <% } %>
       </ul>
    
    </body>

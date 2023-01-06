@@ -7,9 +7,9 @@
    <body>
       
       <form action = "main.jsp" method = "GET">
-         First Name: <input type = "text" name = "first_name">
+         User Name: <input type = "text" name = "user_name">
          <br />
-         Last Name: <input type = "text" name = "last_name" />
+         Password: <input type = "password" name = "password" />
          <input type = "submit" value = "Submit" />
       </form>
       
