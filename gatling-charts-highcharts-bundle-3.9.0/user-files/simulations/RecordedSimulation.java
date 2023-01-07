@@ -39,6 +39,13 @@ public class RecordedSimulation extends Simulation {
           .headers(headers_0)
       );
 
-	  setUp(scn.injectOpen(atOnceUsers(1))).protocols(httpProtocol);
+	  setUp(
+		  scn.injectOpen(
+			nothingFor(1), // 1
+			atOnceUsers(1), // 2
+			rampUsers(38).during(100), // 3
+			nothingFor(900)
+		  ).protocols(httpProtocol)
+		);
   }
 }

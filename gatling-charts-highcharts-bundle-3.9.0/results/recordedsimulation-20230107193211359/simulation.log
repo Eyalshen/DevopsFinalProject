@@ -1,0 +1,4 @@
+RUN	RecordedSimulation	recordedsimulation	1673119931359	 	3.9.0
+USER	RecordedSimulation	START	1673119933859
+REQUEST		request_0	1673119933735	1673119933886	OK	 
+USER	RecordedSimulation	END	1673119933924
