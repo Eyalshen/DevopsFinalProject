@@ -41,7 +41,7 @@ public class RecordedSimulation extends Simulation {
 
 	  setUp(
 		  scn.injectOpen(
-			rampUsers(38).during(40), // 3
+			rampUsers(38).during(120)
 		  ).protocols(httpProtocol)
 		);
   }
